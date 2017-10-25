@@ -1,0 +1,56 @@
+<!Doctype html>
+<html>
+    <head>
+        <% include partials/head %>
+    </head>
+    <body>
+        <% include partials/header %>
+
+        <div class="row">
+        <div class="col-md-6 offset-3" style="margin-top:90px">
+                <center><h3>Sign Up for an Account</h3></center>
+            <form id="needs-validation" novalidate>
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" class="form-control" id="name" aria-describedby="nameHelp" placeholder="Enter your name" required/>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email address</label>
+                    <input type="email" class="form-control" id="registerEmail" aria-describedby="emailHelp" placeholder="Enter email" 
+                    required/>
+                    <div class="invalid-feedback">
+                            Please provide a valid email.
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="gender">Gender</label>
+                    <select class="form-control" id="gender" required/>
+                        <option>Male</option>
+                        <option>Female</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="age">Age</label>
+                    <input type="number" class="form-control" id="age" aria-describedby="ageHelp" placeholder="Enter your age" min="18" required/>
+                    <div class="invalid-feedback">
+                        Please provide a valid age.
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="carplate">Car Plate Number</label>
+                    <input type="text" class="form-control" id="carplate" aria-describedby="carplateHelp" placeholder="Enter your car plate number" required/>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" class="form-control" id="registerPassword" placeholder="Password" min="8" required/>
+                </div>
+                    <center><button type="submit" class="btn btn-primary">Register</button></center>
+                    <br>
+            </form>
+        </div>  
+    </div>
+        
+        <% include partials/scripts %>
+        <script src="/js/register.js"></script>
+    </body>    
+</html>
