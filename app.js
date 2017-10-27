@@ -28,6 +28,7 @@ var registerController = require('./controllers/registerController');
 var mainController = require('./controllers/mainController');
 var checkinController = require('./controllers/checkinController');
 var checkoutController = require('./controllers/checkoutController');
+var adminController = require('./controllers/adminController');
 
 //fire controllers
 //fire function
@@ -36,6 +37,7 @@ registerController(app);
 mainController(app);
 checkinController(app);
 checkoutController(app);
+adminController(app);
 
 //listen to port
 app.listen(3000);
